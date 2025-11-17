@@ -30,5 +30,5 @@
 - [Snowflake Documentation](https://docs.snowflake.com/)
 
 --- 
-**作成者**: Takuya Shoji 
-**最終更新**: 2025/07/15
+**作成者**: Hiroki Watari
+**最終更新**: 2025/11/17
