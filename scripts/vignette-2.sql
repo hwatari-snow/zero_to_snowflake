@@ -13,8 +13,6 @@ Zero to Snowflake - Simple Data Pipeline
 
 ****************************************************************************************************/
 
-ALTER SESSION SET query_tag = '{"origin":"sf_sit-is","name":"tb_101_v2","version":{"major":1, "minor":1},"attributes":{"is_quickstart":0, "source":"tastybytes", "vignette": "data_pipeline"}}';
-
 /*
     生のメニューデータでデータパイプラインを作成することを意図したTasteBytesデータエンジニアの
     役割を担うので、適切にコンテキストを設定しましょう。
@@ -359,7 +357,5 @@ WHERE order_detail_id = 904745311;
 DELETE FROM raw_pos.order_header
 WHERE order_id = 459520441;
 
--- クエリタグを解除
-ALTER SESSION UNSET query_tag;
 -- Suspend warehouse
 ALTER WAREHOUSE tb_de_wh SUSPEND;
