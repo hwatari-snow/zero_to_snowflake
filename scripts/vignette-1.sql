@@ -15,9 +15,6 @@ Zero to Snowflake - Getting Started with Snowflake
 
 ****************************************************************************************************/
 
--- 開始前に、このクエリを実行してセッションクエリタグを設定します。
-ALTER SESSION SET query_tag = '{"origin":"sf_sit-is","name":"tb_101_v2","version":{"major":1, "minor":1},"attributes":{"is_quickstart":0, "source":"tastybytes", "vignette": "getting_started_with_snowflake"}}';
-
 -- ワークシートコンテキストを設定することから始めます。データベース、スキーマ、ロールを設定します。
 
 USE DATABASE tb_101;
@@ -468,5 +465,3 @@ SELECT * EXCLUDE (year, make, model)
 FROM raw_pos.truck;
 
 DROP WAREHOUSE IF EXISTS my_wh;
--- Unset Query Tag
-ALTER SESSION UNSET query_tag;
